@@ -40,6 +40,8 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Update event feed
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
         run: python scripts/update_events.py
 
       - name: Save feed
