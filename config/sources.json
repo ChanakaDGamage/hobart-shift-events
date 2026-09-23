@@ -1,0 +1,62 @@
+[
+  {
+    "id": "jackjumpers",
+    "name": "Tasmania JackJumpers official schedule",
+    "url": "https://www.jackjumpers.com.au/schedule",
+    "adapter": "jackjumpers",
+    "coverage": "Games at recognised Hobart venues on the current club schedule. Away games and Launceston games excluded."
+  },
+  {
+    "id": "north-melbourne-aflw-2026",
+    "name": "North Melbourne 2026 AFLW fixture announcement",
+    "url": "https://www.nmfc.com.au/news/2027559/aflw-fixture-roos-to-launch-flag-defence-with-marvel-stadium-double-header",
+    "adapter": "aflw",
+    "year": 2026,
+    "coverage": "Hobart games in this 2026 club article only. This is not a live AFL match status feed or coverage of all AFL clubs."
+  },
+  {
+    "id": "ancold-2026",
+    "name": "ANCOLD conference announcement",
+    "title": "ANCOLD Conference 2026",
+    "url": "https://ancold.org.au/ancold-2026-conference-hobart-tasmania/",
+    "adapter": "ancold",
+    "year": 2026,
+    "coverage": "This conference's published announcement. No claim that every programme change appears here."
+  },
+  {
+    "id": "nedc-2026",
+    "name": "National Economic Development Conference organiser",
+    "title": "National Economic Development Conference 2026",
+    "url": "https://www.edaconference.com.au/",
+    "adapter": "nedc",
+    "year": 2026,
+    "coverage": "Main conference dates and venue. Optional tours and gala dinner times are not separately imported."
+  },
+  {
+    "id": "ohaa-2026",
+    "name": "Oral Health Association of Australia registration listing",
+    "title": "Oral Health Association of Australia Congress 2026",
+    "url": "https://oralhealthcongress.com.au/OralHealthCongress2025/iCore/Events/Event_display.aspx?EventKey=CON261015",
+    "adapter": "ohaa",
+    "year": 2026,
+    "coverage": "This congress's published dates and venue."
+  },
+  {
+    "id": "hith-2026",
+    "name": "Hospital in the Home meeting organiser",
+    "title": "Hospital in the Home Annual Scientific Meeting 2026",
+    "url": "https://hithsocietyconference.com.au/",
+    "adapter": "hith",
+    "year": 2026,
+    "coverage": "Main meeting dates and venue. Session and dinner times are not imported."
+  },
+  {
+    "id": "ihhc-2026",
+    "name": "Hospitality in Healthcare conference preview",
+    "title": "Hospitality in Healthcare National Conference 2026",
+    "url": "https://www.hospitalityinhealthcaremag.org.au/49-conference-preview-2026",
+    "adapter": "ihhc",
+    "year": 2026,
+    "coverage": "Dates and venue from the organiser's magazine preview. No claim that every programme change appears here."
+  }
+]
