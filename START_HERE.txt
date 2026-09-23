@@ -1,0 +1,79 @@
+HOBART SHIFT EVENT UPDATER
+
+Prepared 23 September 2026.
+The updater is ready to upload. No GitHub repository or schedule has been created
+in your account. Your Flutter app has not been changed yet.
+
+1. CREATE THE REPOSITORY
+
+Sign in to https://github.com/new
+Repository name: hobart-shift-events
+Visibility: Public
+Tick Add a README file.
+Click Create repository.
+
+Public keeps the standard GitHub Actions runner free. This folder contains public
+event information and updater code. It contains no passwords or API keys.
+
+2. UPLOAD THE FILES
+
+Extract Hobart_Shift_Event_Automation.zip on your PC.
+Open the extracted hobart_shift_event_automation folder.
+In your GitHub repository, click Add file, then Upload files.
+Drag the CONTENTS of the extracted folder into GitHub, including the .github
+folder, config, scripts, tests, data, requirements.txt and README.md.
+Do not upload the ZIP itself. Do not upload the outer folder as another level.
+Click Commit changes, committing directly to main.
+
+Check that GitHub has this exact path:
+.github/workflows/update-events.yml
+
+If the .github folder was missed, choose Add file, Create new file.
+Enter .github/workflows/update-events.yml as the filename.
+Open the matching local file in VS Code, copy its whole contents and paste them
+into GitHub. Commit the new file to main.
+
+3. RUN THE FIRST UPDATE
+
+Open the Actions tab in your repository.
+If GitHub asks you to enable workflows, enable them.
+Select Update Hobart events, click Run workflow, then Run workflow again.
+The initial upload may have already started a run; let it finish first.
+Wait for a green tick. The usual run should take a few minutes.
+
+If the Save feed step shows a permission error:
+Settings, Actions, General, Workflow permissions.
+Select Read and write permissions, then Save.
+Run the workflow again.
+
+If the final step is red, open its summary. The updater may have saved the
+available events while flagging a source that needs review. Do not treat old
+records as freshly confirmed simply because the JSON file was updated.
+
+4. FIND YOUR EVENT FEED
+
+Open data, then events.json, then click Raw.
+Copy the URL from your browser. It will look like:
+https://raw.githubusercontent.com/YOUR-USERNAME/hobart-shift-events/main/data/events.json
+
+Send that link in our chat. It is the address to connect to the Flutter Events
+page. Keep your existing Hobart Airport app files as they are for this step.
+
+5. WHAT RUNS AUTOMATICALLY
+
+The workflow requests an update every six hours, at 00:17, 06:17, 12:17 and
+18:17 UTC. GitHub may delay or occasionally skip a scheduled run.
+Your PC does not need to remain on.
+
+It checks the current JackJumpers schedule, five named 2026 conferences and
+Hobart matches in one North Melbourne 2026 AFLW fixture article.
+It does not search the entire internet for new conferences or cover all AFL
+clubs. New conference sources and new season-specific articles need adding.
+
+The saved feed includes a short past history. The app should show only events
+whose end date is today or later in Hobart local time.
+
+Check Actions occasionally. GitHub can disable public-repository schedules after
+60 days without repository activity. Re-enable a disabled workflow from Actions.
+
+See README.md for source coverage, freshness rules and maintenance details.
