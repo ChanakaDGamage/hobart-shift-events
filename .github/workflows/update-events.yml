@@ -1,0 +1,71 @@
+name: Update Hobart events
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'config/**'
+      - 'requirements.txt'
+      - '.github/workflows/update-events.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hobart-events-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Read repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Install parser
+        run: python -m pip install -r requirements.txt
+
+      - name: Check event handling
+        run: python -m unittest discover -s tests -v
+
+      - name: Update event feed
+        run: python scripts/update_events.py
+
+      - name: Save feed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/events.json data/health.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh Hobart event data"
+            git push
+          fi
+
+      - name: Check source health
+        run: |
+          python - <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          health = json.loads(Path("data/health.json").read_text())
+          for source in health["sources"]:
+              print(source["name"], source["status"])
+              for issue in source["issues"]:
+                  print("  " + issue)
+
+          if health["status"] != "ok":
+              print("Available data saved. Some sources need review.")
+              sys.exit(1)
+          PY
