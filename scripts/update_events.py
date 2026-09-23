@@ -21,6 +21,11 @@ from zoneinfo import ZoneInfo
 
 from lxml import html
 
+if __package__:
+    from .ticketmaster import collect_ticketmaster
+else:
+    from ticketmaster import collect_ticketmaster
+
 ROOT = Path(__file__).resolve().parents[1]
 HOBART = ZoneInfo("Australia/Hobart")
 MONTHS = {name.lower(): i for i, name in enumerate(
@@ -283,7 +288,9 @@ def fetch(source):
         return content.decode(response.headers.get_content_charset() or "utf-8", errors="replace")
 
 
-def collect(source, fixture_dir=None):
+def collect(source, fixture_dir=None, now=None):
+    if source["adapter"] == "ticketmaster":
+        return collect_ticketmaster(source, now, fixture_dir)
     try:
         content = ((fixture_dir / (source["adapter"] + ".html")).read_text()
                    if fixture_dir else fetch(source))
@@ -305,7 +312,7 @@ def merge_feed(previous, sources, results, now):
     old_records = deepcopy(records)
     changes = list(previous.get("changes", []))
     source_states = []
-    fields = ("title", "venue", "start_date", "end_date", "start_at", "status", "expected_attendance")
+    fields = ("title", "venue", "start_date", "end_date", "start_at", "end_at", "status", "expected_attendance")
     for source, result in zip(sources, results, strict=True):
         issues = list(result["issues"])
         previous_source = old_sources.get(source["id"], {})
@@ -352,16 +359,52 @@ def merge_feed(previous, sources, results, now):
     # The feed keeps a short past history; applications should filter end_date >= Hobart today.
     events = sorted((item for item in records.values() if item["end_date"] >= cutoff),
                     key=lambda item: (item["start_date"], item.get("start_at") or "", item["id"]))
+    mark_duplicate_listings(events, source_states, stamp)
     return {
         "schema_version": 1, "generated_at": stamp, "timezone": "Australia/Hobart",
         "recommended_refresh_seconds": 21600, "stale_after_seconds": 43200,
-        "coverage": "Connected sources only. Five named 2026 conferences, the current JackJumpers schedule, "
-                    "and Hobart entries in one 2026 AFLW article. Not all Hobart events or all AFL fixtures.",
+        "coverage": "Connected sources only: named conferences, the current JackJumpers schedule, "
+                    "Hobart entries in a 2026 AFLW article, and Ticketmaster listings within 30 km of Hobart "
+                    "when the API key is configured. Ticketmaster search extends 365 days ahead. "
+                    "Not all Hobart events or all AFL fixtures.",
         "status_note": "Listed means present in the source, not a guarantee the event will proceed. "
                        "Missing events are not treated as cancelled. Status detection is limited to explicit "
-                       "text recognised by the adapters; review official announcements for urgent changes.",
+                       "text recognised by the adapters and Ticketmaster status codes; review official "
+                       "announcements for urgent changes. Ticket sales status does not measure attendance.",
         "sources": source_states, "events": events, "changes": changes[-100:],
     }
+
+
+def mark_duplicate_listings(events, sources, stamp):
+    """Hide only exact, freshly checked matches. Conflicting sources remain visible."""
+    def normal(value):
+        value = re.sub(r"\b(?:vs|versus)\b\.?", "v", value.lower())
+        return re.sub(r"[^a-z0-9]+", "", value)
+
+    groups = {}
+    for item in events:
+        item.pop("duplicate_of", None)
+        if item.get("verification") != "checked" or item.get("last_seen_at") != stamp or not item.get("start_at"):
+            continue
+        venue = VENUES.get(item["venue"].lower(), item["venue"])
+        key = (normal(item["title"]), normal(venue), item["start_date"], item["end_date"],
+               datetime.fromisoformat(item["start_at"]).astimezone(timezone.utc))
+        groups.setdefault(key, []).append(item)
+    for items in groups.values():
+        if len(items) < 2 or not any(item["source_id"] == "ticketmaster" for item in items):
+            continue
+        if len({item["status"] for item in items}) > 1:
+            for item in items:
+                item["verification"] = "needs_review"
+                for source in sources:
+                    if source["id"] == item["source_id"]:
+                        source["status"] = "needs_review"
+                        source["issues"].append(f"{item['id']}: matching listings disagree on status")
+            continue
+        chosen = sorted(items, key=lambda item: (item["source_id"] == "ticketmaster", item["id"]))[0]
+        for item in items:
+            if item is not chosen:
+                item["duplicate_of"] = chosen["id"]
 
 
 def write_json(path, value):
@@ -383,7 +426,7 @@ def main():
     if now.tzinfo is None:
         parser.error("--now must include a timezone")
     with ThreadPoolExecutor(max_workers=4) as pool:
-        results = list(pool.map(lambda source: collect(source, args.fixture_dir), sources))
+        results = list(pool.map(lambda source: collect(source, args.fixture_dir, now), sources))
     feed = merge_feed(previous, sources, results, now)
     write_json(args.output, feed)
     health = {"generated_at": feed["generated_at"],

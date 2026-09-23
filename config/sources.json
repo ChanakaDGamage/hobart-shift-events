@@ -58,5 +58,16 @@
     "adapter": "ihhc",
     "year": 2026,
     "coverage": "Dates and venue from the organiser's magazine preview. No claim that every programme change appears here."
+  },
+  {
+    "id": "ticketmaster",
+    "name": "Ticketmaster Discovery",
+    "url": "https://www.ticketmaster.com.au/",
+    "adapter": "ticketmaster",
+    "latitude": -42.8821,
+    "longitude": 147.3272,
+    "radius_km": 30,
+    "lookahead_days": 365,
+    "coverage": "Ticketmaster Discovery listings within 30 km of Hobart for the next 365 days, subject to API coverage. Venue locations are checked. Requires the TICKETMASTER_API_KEY repository secret. No attendance or pickup-demand estimate."
   }
 ]
