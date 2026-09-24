@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ohaa-2026-forecast",
+    "kind": "organiser_estimate",
+    "match": {
+      "id": "ohaa-2026:conference",
+      "start_date": "2026-10-15",
+      "end_date": "2026-10-17",
+      "venue": "Wrest Point"
+    },
+    "text": "More than 600 people expected",
+    "note": "Organiser prospectus forecast for the congress, not a daily count or registrations sold.",
+    "source_name": "OHAA 2026 sponsorship prospectus, page 4",
+    "source_url": "https://oralhealthcongress.com.au/common/Uploaded%20files/_OHAA%20Files/Congress/260209%20OHAA2026_Prospectus.pdf#page=4",
+    "checked_at": "2026-09-23T23:16:21+00:00",
+    "review_after": "2026-10-23T23:16:21+00:00",
+    "evidence": "Connect with over 600 oral health professionals"
+  },
+  {
+    "id": "hith-2026-history",
+    "kind": "historical_attendance",
+    "match": {
+      "id": "hith-2026:conference",
+      "start_date": "2026-11-17",
+      "end_date": "2026-11-19",
+      "venue": "Hotel Grand Chancellor"
+    },
+    "text": "Nearly 400 attendees in each of 2024 and 2025",
+    "note": "Previous annual meetings. A 2026 attendance forecast was not published on the checked page.",
+    "source_name": "HITH Society 2026 sponsorship page",
+    "source_url": "https://hithsocietyconference.com.au/sponsorship-exhibition2/",
+    "checked_at": "2026-09-23T23:16:21+00:00",
+    "review_after": "2026-12-22T23:16:21+00:00",
+    "evidence": "record numbers of nearly 400 attendees in both 2024 and 2025"
+  },
+  {
+    "id": "nedc-2026-history",
+    "kind": "historical_attendance",
+    "match": {
+      "id": "nedc-2026:conference",
+      "start_date": "2026-10-13",
+      "end_date": "2026-10-15",
+      "venue": "Crowne Plaza"
+    },
+    "text": "220+ attendees at the 2025 Newcastle conference",
+    "note": "Previous conference attendance. This is not a forecast for Hobart in 2026.",
+    "source_name": "NEDC26 sponsorship prospectus, page 6",
+    "source_url": "https://drive.google.com/file/d/1HPo_DM5OgFMLkkWu3mKk1eM1dEOwLZH2/view",
+    "checked_at": "2026-09-23T23:16:21+00:00",
+    "review_after": "2026-10-23T23:16:21+00:00",
+    "evidence": "NEDC25 SNAPSHOT NEWCASTLE 220+ ATTENDEES"
+  },
+  {
+    "id": "mystate-basketball-capacity",
+    "kind": "venue_capacity",
+    "match": {
+      "venue": "MyState Bank Arena",
+      "category": "NBL"
+    },
+    "text": "4,300 people for the published basketball layout",
+    "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+    "source_name": "MyState Bank Arena venue information",
+    "source_url": "https://www.mystatebankarena.com.au/about",
+    "checked_at": "2026-09-23T23:16:21+00:00",
+    "review_after": "2026-12-22T23:16:21+00:00",
+    "evidence": "4,300 for a Basketball or Netball game"
+  },
+  {
+    "id": "odeon-capacity",
+    "kind": "venue_capacity",
+    "match": {
+      "venue": "Odeon Theatre"
+    },
+    "text": "841 fully seated, or 1,350 standing and seated",
+    "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+    "source_name": "Odeon official venue page",
+    "source_url": "https://odeontheatre.com.au/venue",
+    "checked_at": "2026-09-23T23:16:21+00:00",
+    "review_after": "2026-12-22T23:16:21+00:00",
+    "evidence": "841 Fully Seated; 1350 GA Standing + Seated"
+  }
+]

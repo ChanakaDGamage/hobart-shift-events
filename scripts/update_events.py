@@ -23,8 +23,10 @@ from lxml import html
 
 if __package__:
     from .ticketmaster import collect_ticketmaster
+    from .attendance import attach_attendance
 else:
     from ticketmaster import collect_ticketmaster
+    from attendance import attach_attendance
 
 ROOT = Path(__file__).resolve().parents[1]
 HOBART = ZoneInfo("Australia/Hobart")
@@ -428,6 +430,8 @@ def main():
     with ThreadPoolExecutor(max_workers=4) as pool:
         results = list(pool.map(lambda source: collect(source, args.fixture_dir, now), sources))
     feed = merge_feed(previous, sources, results, now)
+    references = json.loads((ROOT / "config/attendance_references.json").read_text(encoding="utf-8"))
+    attach_attendance(feed, references)
     write_json(args.output, feed)
     health = {"generated_at": feed["generated_at"],
               "status": "ok" if all(s["status"] == "ok" for s in feed["sources"]) else "needs_review",
