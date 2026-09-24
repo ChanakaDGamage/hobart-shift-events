@@ -24,9 +24,11 @@ from lxml import html
 if __package__:
     from .ticketmaster import collect_ticketmaster
     from .attendance import attach_attendance
+    from .auto_attendance import refresh_attendance, fetch as fetch_attendance
 else:
     from ticketmaster import collect_ticketmaster
     from attendance import attach_attendance
+    from auto_attendance import refresh_attendance, fetch as fetch_attendance
 
 ROOT = Path(__file__).resolve().parents[1]
 HOBART = ZoneInfo("Australia/Hobart")
@@ -299,6 +301,7 @@ def collect(source, fixture_dir=None, now=None):
         events, observed, issues = parse_document(content, source)
         return {"events": events, "observed": observed, "issues": issues,
                 "status": "needs_review" if issues else "ok",
+                "attendance_content": content,
                 "content_hash": hashlib.sha256(content.encode()).hexdigest()}
     except Exception as error:
         # No deletion, guessed event status, or false freshness after a failed check.
@@ -432,12 +435,25 @@ def main():
     feed = merge_feed(previous, sources, results, now)
     references = json.loads((ROOT / "config/attendance_references.json").read_text(encoding="utf-8"))
     attach_attendance(feed, references)
+    attendance_sources = json.loads((ROOT / "config/attendance_sources.json").read_text(encoding="utf-8"))
+    cached_pages = {source["url"]: result["attendance_content"]
+                    for source, result in zip(sources, results, strict=True) if "attendance_content" in result}
+
+    def attendance_fetch(source):
+        if args.fixture_dir:
+            suffix = ".pdf" if source["format"] == "pdf" else ".html"
+            path = args.fixture_dir / (source["id"] + suffix)
+            return path.read_bytes() if suffix == ".pdf" else path.read_text(encoding="utf-8")
+        return cached_pages[source["url"]] if source["url"] in cached_pages else fetch_attendance(source)
+
+    refresh_attendance(feed, previous, attendance_sources, now, fetcher=attendance_fetch)
     write_json(args.output, feed)
+    all_sources = feed["sources"] + feed["attendance_sources"]
     health = {"generated_at": feed["generated_at"],
-              "status": "ok" if all(s["status"] == "ok" for s in feed["sources"]) else "needs_review",
-              "event_count": len(feed["events"]), "sources": feed["sources"]}
+              "status": "ok" if all(s["status"] == "ok" for s in all_sources) else "needs_review",
+              "event_count": len(feed["events"]), "sources": all_sources}
     write_json(args.output.with_name("health.json"), health)
-    for source in feed["sources"]:
+    for source in all_sources:
         print(f"{source['id']}: {source['status']}, {source['event_count']} parsed events")
         for issue in source["issues"]:
             print("  " + issue)

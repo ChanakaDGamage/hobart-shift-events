@@ -1,0 +1,157 @@
+[
+  {
+    "id": "attendance-ancold-2026-announcement",
+    "name": "ANCOLD Conference 2026 announcement",
+    "url": "https://ancold.org.au/ancold-2026-conference-hobart-tasmania/",
+    "format": "html",
+    "identity": "ANCOLD",
+    "year": 2026,
+    "match": {
+      "id": "ancold-2026:conference",
+      "start_date": "2026-10-26",
+      "end_date": "2026-10-28",
+      "venue": "Hotel Grand Chancellor"
+    },
+    "priority": 10
+  },
+  {
+    "id": "attendance-ancold-2026-organiser",
+    "name": "ANCOLD Conference 2026 organiser",
+    "url": "https://ancoldconference.com.au/",
+    "format": "html",
+    "identity": "ANCOLD",
+    "year": 2026,
+    "match": {
+      "id": "ancold-2026:conference",
+      "start_date": "2026-10-26",
+      "end_date": "2026-10-28",
+      "venue": "Hotel Grand Chancellor"
+    },
+    "priority": 100
+  },
+  {
+    "id": "attendance-ohaa-2026-registration",
+    "name": "Oral Health Association of Australia Congress 2026 registration",
+    "url": "https://oralhealthcongress.com.au/OralHealthCongress2025/iCore/Events/Event_display.aspx?EventKey=CON261015",
+    "format": "html",
+    "identity": "Congress",
+    "year": 2026,
+    "match": {
+      "id": "ohaa-2026:conference",
+      "start_date": "2026-10-15",
+      "end_date": "2026-10-17",
+      "venue": "Wrest Point"
+    },
+    "priority": 100
+  },
+  {
+    "id": "attendance-ohaa-2026-prospectus",
+    "name": "Oral Health Association of Australia Congress 2026 prospectus",
+    "url": "https://oralhealthcongress.com.au/common/Uploaded%20files/_OHAA%20Files/Congress/260209%20OHAA2026_Prospectus.pdf#page=4",
+    "format": "pdf",
+    "identity": "OHAA",
+    "year": 2026,
+    "match": {
+      "id": "ohaa-2026:conference",
+      "start_date": "2026-10-15",
+      "end_date": "2026-10-17",
+      "venue": "Wrest Point"
+    },
+    "pages": [
+      4
+    ],
+    "forecast_phrase": "oral_health_professionals",
+    "seed_reference": "ohaa-2026-forecast",
+    "priority": 10
+  },
+  {
+    "id": "attendance-hith-2026-organiser",
+    "name": "Hospital in the Home Annual Scientific Meeting 2026 organiser",
+    "url": "https://hithsocietyconference.com.au/",
+    "format": "html",
+    "identity": "Hospital",
+    "year": 2026,
+    "match": {
+      "id": "hith-2026:conference",
+      "start_date": "2026-11-17",
+      "end_date": "2026-11-19",
+      "venue": "Hotel Grand Chancellor"
+    },
+    "priority": 100
+  },
+  {
+    "id": "attendance-hith-2026-sponsorship",
+    "name": "Hospital in the Home Annual Scientific Meeting 2026 sponsorship",
+    "url": "https://hithsocietyconference.com.au/sponsorship-exhibition2/",
+    "format": "html",
+    "identity": "HITH",
+    "year": 2026,
+    "match": {
+      "id": "hith-2026:conference",
+      "start_date": "2026-11-17",
+      "end_date": "2026-11-19",
+      "venue": "Hotel Grand Chancellor"
+    },
+    "priority": 50
+  },
+  {
+    "id": "attendance-nedc-2026-organiser",
+    "name": "National Economic Development Conference 2026 organiser",
+    "url": "https://www.edaconference.com.au/",
+    "format": "html",
+    "identity": "Economic",
+    "year": 2026,
+    "match": {
+      "id": "nedc-2026:conference",
+      "start_date": "2026-10-13",
+      "end_date": "2026-10-15",
+      "venue": "Crowne Plaza"
+    },
+    "priority": 100
+  },
+  {
+    "id": "attendance-nedc-2026-sponsorship",
+    "name": "National Economic Development Conference 2026 sponsorship",
+    "url": "https://edaconference.com.au/sponsorship",
+    "format": "html",
+    "identity": "NEDC",
+    "year": 2026,
+    "match": {
+      "id": "nedc-2026:conference",
+      "start_date": "2026-10-13",
+      "end_date": "2026-10-15",
+      "venue": "Crowne Plaza"
+    },
+    "priority": 50
+  },
+  {
+    "id": "attendance-ihhc-2026-preview",
+    "name": "Hospitality in Healthcare National Conference 2026 preview",
+    "url": "https://www.hospitalityinhealthcaremag.org.au/49-conference-preview-2026",
+    "format": "html",
+    "identity": "Healthcare",
+    "year": 2026,
+    "match": {
+      "id": "ihhc-2026:conference",
+      "start_date": "2026-10-12",
+      "end_date": "2026-10-14",
+      "venue": "Wrest Point"
+    },
+    "priority": 10
+  },
+  {
+    "id": "attendance-ihhc-2026-organiser",
+    "name": "Hospitality in Healthcare National Conference 2026 organiser",
+    "url": "https://www.ihhc.org.au/conference/2026-conference/supporters-exhibitors/",
+    "format": "html",
+    "identity": "Conference",
+    "year": 2026,
+    "match": {
+      "id": "ihhc-2026:conference",
+      "start_date": "2026-10-12",
+      "end_date": "2026-10-14",
+      "venue": "Wrest Point"
+    },
+    "priority": 100
+  }
+]
