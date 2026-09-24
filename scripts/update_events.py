@@ -15,7 +15,7 @@ import os
 from pathlib import Path
 import re
 import sys
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 
@@ -23,10 +23,14 @@ from lxml import html
 
 if __package__:
     from .ticketmaster import collect_ticketmaster
+    from .discovery import collect_conferences, fetch as discovery_fetch
+    from .afl_discovery import collect_afl
     from .attendance import attach_attendance
     from .auto_attendance import refresh_attendance, fetch as fetch_attendance
 else:
     from ticketmaster import collect_ticketmaster
+    from discovery import collect_conferences, fetch as discovery_fetch
+    from afl_discovery import collect_afl
     from attendance import attach_attendance
     from auto_attendance import refresh_attendance, fetch as fetch_attendance
 
@@ -134,6 +138,7 @@ def event(source, key, title, venue, start, end, category, start_at=None,
         "end_date": end.isoformat(), "start_at": start_at.isoformat() if start_at else None,
         "end_at": None, "status": status, "status_evidence": evidence,
         "expected_attendance": attendance,
+        "organiser_url": source.get("organiser_url"),
     }
 
 
@@ -293,6 +298,13 @@ def fetch(source):
 
 
 def collect(source, fixture_dir=None, now=None):
+    if source["adapter"] in {"conference_design", "leishman", "afl_official"}:
+        def fetch_discovery(url):
+            if fixture_dir:
+                return (fixture_dir / "discovery" / (hashlib.sha256(url.encode()).hexdigest() + ".txt")).read_text(encoding="utf-8")
+            return discovery_fetch(url)
+        collector = collect_afl if source["adapter"] == "afl_official" else collect_conferences
+        return collector(source, now or datetime.now(timezone.utc), fetcher=fetch_discovery)
     if source["adapter"] == "ticketmaster":
         return collect_ticketmaster(source, now, fixture_dir)
     try:
@@ -344,6 +356,8 @@ def merge_feed(previous, sources, results, now):
                 item["status_evidence"] = old.get("status_evidence")
                 item["verification"] = "needs_review"
                 issues.append(f"{item['id']}: previous {old['status']} status needs manual review")
+            if old and all(old.get(k) == item.get(k) for k in ("start_date", "end_date", "venue")) and old.get("attendance_source"):
+                item.setdefault("attendance_source", old["attendance_source"])
             item["first_seen_at"] = old.get("first_seen_at", stamp) if old else stamp
             modified = {field: {"before": old.get(field), "after": item.get(field)}
                         for field in fields if old and old.get(field) != item.get(field)}
@@ -368,10 +382,10 @@ def merge_feed(previous, sources, results, now):
     return {
         "schema_version": 1, "generated_at": stamp, "timezone": "Australia/Hobart",
         "recommended_refresh_seconds": 21600, "stale_after_seconds": 43200,
-        "coverage": "Connected sources only: named conferences, the current JackJumpers schedule, "
-                    "Hobart entries in a 2026 AFLW article, and Ticketmaster listings within 30 km of Hobart "
-                    "when the API key is configured. Ticketmaster search extends 365 days ahead. "
-                    "Not all Hobart events or all AFL fixtures.",
+        "coverage": "New Hobart conferences from Conference Design and Leishman Associates public calendars; "
+                    "official AFL, AFLW, VFL and VFLW fixtures; JackJumpers schedule; "
+                    "named conference sources; and Ticketmaster within 30 km for 365 days ahead. "
+                    "Public calendar and football discovery extends 730 days ahead. Coverage depends on published listings.",
         "status_note": "Listed means present in the source, not a guarantee the event will proceed. "
                        "Missing events are not treated as cancelled. Status detection is limited to explicit "
                        "text recognised by the adapters and Ticketmaster status codes; review official "
@@ -381,32 +395,75 @@ def merge_feed(previous, sources, results, now):
 
 
 def mark_duplicate_listings(events, sources, stamp):
-    """Hide only exact, freshly checked matches. Conflicting sources remain visible."""
+    """Join freshly checked equivalent listings; preserve source conflicts."""
     def normal(value):
         value = re.sub(r"\b(?:vs|versus)\b\.?", "v", value.lower())
+        value = re.sub(r"\s+-\s+20\d{2}.*(?:aflw|afl|nbl).*", "", value)
+        value = value.replace("adelaide crows", "adelaide")
         return re.sub(r"[^a-z0-9]+", "", value)
 
-    groups = {}
+    def links(item):
+        values = list(item.get("related_urls", [])) + [item.get("organiser_url")]
+        if item["source_id"] == "ticketmaster":
+            values.append(item["source_url"])
+        result = set()
+        for value in filter(None, values):
+            url = urlsplit(value)
+            ticket = re.search(r"/event/([a-z0-9]+)", url.path, re.I)
+            result.add("ticketmaster:" + ticket[1].lower() if ticket and url.hostname and url.hostname.endswith("ticketmaster.com.au")
+                       else (url.hostname or "").removeprefix("www.") + url.path.rstrip("/"))
+        return result
+
+    def time_of(item):
+        value = item.get("start_at")
+        return datetime.fromisoformat(value).astimezone(timezone.utc) if value else None
+
+    fresh = []
     for item in events:
         item.pop("duplicate_of", None)
-        if item.get("verification") != "checked" or item.get("last_seen_at") != stamp or not item.get("start_at"):
-            continue
-        venue = VENUES.get(item["venue"].lower(), item["venue"])
-        key = (normal(item["title"]), normal(venue), item["start_date"], item["end_date"],
-               datetime.fromisoformat(item["start_at"]).astimezone(timezone.utc))
-        groups.setdefault(key, []).append(item)
+        if item.get("verification") == "checked" and item.get("last_seen_at") == stamp:
+            fresh.append(item)
+    parents = {item["id"]: item["id"] for item in fresh}
+    def root(key):
+        while parents[key] != key:
+            key = parents[key]
+        return key
+    for index, left in enumerate(fresh):
+        for right in fresh[index + 1:]:
+            if left["source_id"] == right["source_id"] or left["category"] != right["category"]:
+                continue
+            same_name = normal(left["title"]) == normal(right["title"])
+            shared_link = bool(links(left) & links(right))
+            same_dates = (left["start_date"], left["end_date"]) == (right["start_date"], right["end_date"])
+            lv = VENUES.get(left["venue"].lower(), left["venue"])
+            rv = VENUES.get(right["venue"].lower(), right["venue"])
+            same_venue = normal(lv) == normal(rv)
+            unknown_venue = left.get("venue_is_unknown") or right.get("venue_is_unknown")
+            if shared_link and left["start_date"][:4] != right["start_date"][:4]:
+                shared_link = False
+            if not shared_link and not (same_name and same_dates and same_venue and time_of(left) == time_of(right)):
+                continue
+            conflict = not same_dates or (not same_venue and not unknown_venue) or left["status"] != right["status"]
+            conflict = conflict or (time_of(left) is not None and time_of(right) is not None and time_of(left) != time_of(right))
+            if conflict:
+                for item in (left, right):
+                    item["verification"] = "needs_review"
+                    for source in sources:
+                        if source["id"] == item["source_id"]:
+                            source["status"] = "needs_review"
+                            source["issues"].append(f"{item['id']}: matching listings disagree on date, time, venue or status")
+                continue
+            parents[root(right["id"])] = root(left["id"])
+    groups = {}
+    for item in fresh:
+        groups.setdefault(root(item["id"]), []).append(item)
     for items in groups.values():
-        if len(items) < 2 or not any(item["source_id"] == "ticketmaster" for item in items):
+        if len(items) < 2 or any(item["verification"] != "checked" for item in items):
             continue
-        if len({item["status"] for item in items}) > 1:
-            for item in items:
-                item["verification"] = "needs_review"
-                for source in sources:
-                    if source["id"] == item["source_id"]:
-                        source["status"] = "needs_review"
-                        source["issues"].append(f"{item['id']}: matching listings disagree on status")
-            continue
-        chosen = sorted(items, key=lambda item: (item["source_id"] == "ticketmaster", item["id"]))[0]
+        def priority(item):
+            return (0 if item["source_id"] == "afl-official" else 3 if item["source_id"] == "ticketmaster"
+                    else 2 if item.get("discovered") else 1, item["id"])
+        chosen = min(items, key=priority)
         for item in items:
             if item is not chosen:
                 item["duplicate_of"] = chosen["id"]
@@ -436,8 +493,12 @@ def main():
     references = json.loads((ROOT / "config/attendance_references.json").read_text(encoding="utf-8"))
     attach_attendance(feed, references)
     attendance_sources = json.loads((ROOT / "config/attendance_sources.json").read_text(encoding="utf-8"))
+    attendance_sources.extend(event["attendance_source"] for event in feed["events"] if event.get("attendance_source"))
     cached_pages = {source["url"]: result["attendance_content"]
                     for source, result in zip(sources, results, strict=True) if "attendance_content" in result}
+
+    for result in results:
+        cached_pages.update(result.get("attendance_pages", {}))
 
     def attendance_fetch(source):
         if args.fixture_dir:

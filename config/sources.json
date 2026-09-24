@@ -21,7 +21,8 @@
     "url": "https://ancold.org.au/ancold-2026-conference-hobart-tasmania/",
     "adapter": "ancold",
     "year": 2026,
-    "coverage": "This conference's published announcement. No claim that every programme change appears here."
+    "coverage": "This conference's published announcement. No claim that every programme change appears here.",
+    "organiser_url": "https://ancoldconference.com.au/"
   },
   {
     "id": "nedc-2026",
@@ -30,7 +31,8 @@
     "url": "https://www.edaconference.com.au/",
     "adapter": "nedc",
     "year": 2026,
-    "coverage": "Main conference dates and venue. Optional tours and gala dinner times are not separately imported."
+    "coverage": "Main conference dates and venue. Optional tours and gala dinner times are not separately imported.",
+    "organiser_url": "https://www.edaconference.com.au/"
   },
   {
     "id": "ohaa-2026",
@@ -48,7 +50,8 @@
     "url": "https://hithsocietyconference.com.au/",
     "adapter": "hith",
     "year": 2026,
-    "coverage": "Main meeting dates and venue. Session and dinner times are not imported."
+    "coverage": "Main meeting dates and venue. Session and dinner times are not imported.",
+    "organiser_url": "https://hithsocietyconference.com.au/"
   },
   {
     "id": "ihhc-2026",
@@ -69,5 +72,26 @@
     "radius_km": 30,
     "lookahead_days": 365,
     "coverage": "Ticketmaster Discovery listings within 30 km of Hobart for the next 365 days, subject to API coverage. Venue locations are checked. Requires the TICKETMASTER_API_KEY repository secret. No attendance or pickup-demand estimate."
+  },
+  {
+    "id": "conference-design",
+    "name": "Conference Design public calendars",
+    "url": "https://conferencedesign.com.au/",
+    "adapter": "conference_design",
+    "coverage": "Dated Hobart conferences from public year calendars linked by the organiser. New years are discovered automatically."
+  },
+  {
+    "id": "leishman-conferences",
+    "name": "Leishman Associates conference calendar",
+    "url": "https://leishman-associates.com.au/future/",
+    "adapter": "leishman",
+    "coverage": "Dated Hobart entries in the organiser current and future conference calendar. New annual sections are discovered automatically."
+  },
+  {
+    "id": "afl-official",
+    "name": "AFL official fixtures",
+    "url": "https://www.afl.com.au/fixture",
+    "adapter": "afl_official",
+    "coverage": "Published AFL, AFLW, VFL and VFLW fixtures at Hobart venues. New seasons are discovered from the public AFL feed."
   }
 ]
