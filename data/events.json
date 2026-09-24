@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-23T22:59:59+00:00",
+  "generated_at": "2026-09-24T00:06:28+00:00",
   "timezone": "Australia/Hobart",
   "recommended_refresh_seconds": 21600,
   "stale_after_seconds": 43200,
@@ -12,8 +12,8 @@
       "name": "Tasmania JackJumpers official schedule",
       "url": "https://www.jackjumpers.com.au/schedule",
       "coverage": "Games at recognised Hobart venues on the current club schedule. Away games and Launceston games excluded.",
-      "last_attempt_at": "2026-09-23T22:59:59+00:00",
-      "last_success_at": "2026-09-23T22:59:59+00:00",
+      "last_attempt_at": "2026-09-24T00:06:28+00:00",
+      "last_success_at": "2026-09-24T00:06:28+00:00",
       "status": "ok",
       "event_count": 15,
       "issues": []
@@ -23,8 +23,8 @@
       "name": "North Melbourne 2026 AFLW fixture announcement",
       "url": "https://www.nmfc.com.au/news/2027559/aflw-fixture-roos-to-launch-flag-defence-with-marvel-stadium-double-header",
       "coverage": "Hobart games in this 2026 club article only. This is not a live AFL match status feed or coverage of all AFL clubs.",
-      "last_attempt_at": "2026-09-23T22:59:59+00:00",
-      "last_success_at": "2026-09-23T22:59:59+00:00",
+      "last_attempt_at": "2026-09-24T00:06:28+00:00",
+      "last_success_at": "2026-09-24T00:06:28+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -34,8 +34,8 @@
       "name": "ANCOLD conference announcement",
       "url": "https://ancold.org.au/ancold-2026-conference-hobart-tasmania/",
       "coverage": "This conference's published announcement. No claim that every programme change appears here.",
-      "last_attempt_at": "2026-09-23T22:59:59+00:00",
-      "last_success_at": "2026-09-23T22:59:59+00:00",
+      "last_attempt_at": "2026-09-24T00:06:28+00:00",
+      "last_success_at": "2026-09-24T00:06:28+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -45,8 +45,8 @@
       "name": "National Economic Development Conference organiser",
       "url": "https://www.edaconference.com.au/",
       "coverage": "Main conference dates and venue. Optional tours and gala dinner times are not separately imported.",
-      "last_attempt_at": "2026-09-23T22:59:59+00:00",
-      "last_success_at": "2026-09-23T22:59:59+00:00",
+      "last_attempt_at": "2026-09-24T00:06:28+00:00",
+      "last_success_at": "2026-09-24T00:06:28+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -56,8 +56,8 @@
       "name": "Oral Health Association of Australia registration listing",
       "url": "https://oralhealthcongress.com.au/OralHealthCongress2025/iCore/Events/Event_display.aspx?EventKey=CON261015",
       "coverage": "This congress's published dates and venue.",
-      "last_attempt_at": "2026-09-23T22:59:59+00:00",
-      "last_success_at": "2026-09-23T22:59:59+00:00",
+      "last_attempt_at": "2026-09-24T00:06:28+00:00",
+      "last_success_at": "2026-09-24T00:06:28+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -67,19 +67,21 @@
       "name": "Hospital in the Home meeting organiser",
       "url": "https://hithsocietyconference.com.au/",
       "coverage": "Main meeting dates and venue. Session and dinner times are not imported.",
-      "last_attempt_at": "2026-09-23T22:59:59+00:00",
+      "last_attempt_at": "2026-09-24T00:06:28+00:00",
       "last_success_at": "2026-09-23T22:59:59+00:00",
-      "status": "ok",
-      "event_count": 1,
-      "issues": []
+      "status": "error",
+      "event_count": 0,
+      "issues": [
+        "SourceFormatError: Expected one event field; found 0"
+      ]
     },
     {
       "id": "ihhc-2026",
       "name": "Hospitality in Healthcare conference preview",
       "url": "https://www.hospitalityinhealthcaremag.org.au/49-conference-preview-2026",
       "coverage": "Dates and venue from the organiser's magazine preview. No claim that every programme change appears here.",
-      "last_attempt_at": "2026-09-23T22:59:59+00:00",
-      "last_success_at": "2026-09-23T22:59:59+00:00",
+      "last_attempt_at": "2026-09-24T00:06:28+00:00",
+      "last_success_at": "2026-09-24T00:06:28+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -89,11 +91,13 @@
       "name": "Ticketmaster Discovery",
       "url": "https://www.ticketmaster.com.au/",
       "coverage": "Ticketmaster Discovery listings within 30 km of Hobart for the next 365 days, subject to API coverage. Venue locations are checked. Requires the TICKETMASTER_API_KEY repository secret. No attendance or pickup-demand estimate.",
-      "last_attempt_at": "2026-09-23T22:59:59+00:00",
+      "last_attempt_at": "2026-09-24T00:06:28+00:00",
       "last_success_at": "2026-09-23T22:59:59+00:00",
-      "status": "ok",
-      "event_count": 95,
-      "issues": []
+      "status": "error",
+      "event_count": 0,
+      "issues": [
+        "Ticketmaster request failed or returned invalid JSON"
+      ]
     }
   ],
   "events": [
@@ -115,9 +119,10 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": []
     },
     {
       "id": "jackjumpers:36e80b8c-58ad-11f1-ab03-2572c13c410b",
@@ -137,9 +142,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "mystate-basketball-capacity",
+          "kind": "venue_capacity",
+          "text": "4,300 people for the published basketball layout",
+          "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+          "source_name": "MyState Bank Arena venue information",
+          "source_url": "https://www.mystatebankarena.com.au/about",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kf4s",
@@ -160,10 +179,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kf--",
@@ -184,10 +204,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kbq7",
@@ -208,10 +229,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "jackjumpers:36f713cb-58ad-11f1-b8d2-f1316c48f9c2",
@@ -231,9 +266,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "mystate-basketball-capacity",
+          "kind": "venue_capacity",
+          "text": "4,300 people for the published basketball layout",
+          "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+          "source_name": "MyState Bank Arena venue information",
+          "source_url": "https://www.mystatebankarena.com.au/about",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k_Az",
@@ -254,10 +303,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k_p7",
@@ -278,10 +328,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:1AKZkuPGkdwii3a",
@@ -302,10 +366,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkuPGkdwgG3m",
@@ -326,10 +391,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkuPGkdSAGKL",
@@ -350,10 +416,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:117YvN-a0wjdvu",
@@ -374,10 +441,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kf0f",
@@ -398,10 +479,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkuPGkdwii35",
@@ -422,10 +504,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkuPGkdwgG3Y",
@@ -446,10 +529,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZko3Gkd6NDeW",
@@ -470,10 +554,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k9_k",
@@ -494,10 +592,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17FZ76",
@@ -518,10 +630,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ihhc-2026:conference",
@@ -541,9 +654,10 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": []
     },
     {
       "id": "nedc-2026:conference",
@@ -563,9 +677,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "nedc-2026-history",
+          "kind": "historical_attendance",
+          "text": "220+ attendees at the 2025 Newcastle conference",
+          "note": "Previous conference attendance. This is not a forecast for Hobart in 2026.",
+          "source_name": "NEDC26 sponsorship prospectus, page 6",
+          "source_url": "https://drive.google.com/file/d/1HPo_DM5OgFMLkkWu3mKk1eM1dEOwLZH2/view",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-10-23T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:1AKZkasGketexZm",
@@ -586,10 +714,24 @@
       "status_evidence": "Ticketmaster dates.status.code=rescheduled",
       "ticketmaster_status": "rescheduled",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k90M",
@@ -610,10 +752,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ohaa-2026:conference",
@@ -633,9 +776,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "ohaa-2026-forecast",
+          "kind": "organiser_estimate",
+          "text": "More than 600 people expected",
+          "note": "Organiser prospectus forecast for the congress, not a daily count or registrations sold.",
+          "source_name": "OHAA 2026 sponsorship prospectus, page 4",
+          "source_url": "https://oralhealthcongress.com.au/common/Uploaded%20files/_OHAA%20Files/Congress/260209%20OHAA2026_Prospectus.pdf#page=4",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-10-23T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k4k4",
@@ -656,10 +813,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "jackjumpers:3700bf63-58ad-11f1-89a0-03625b994063",
@@ -679,9 +837,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "mystate-basketball-capacity",
+          "kind": "venue_capacity",
+          "text": "4,300 people for the published basketball layout",
+          "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+          "source_name": "MyState Bank Arena venue information",
+          "source_url": "https://www.mystatebankarena.com.au/about",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:177Yv0G6GSETbJ8",
@@ -702,10 +874,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:177Yv0G6GRbOkEG",
@@ -726,10 +899,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k4k9",
@@ -750,10 +937,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "jackjumpers:37085418-58ad-11f1-9e12-411a11259918",
@@ -773,9 +961,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "mystate-basketball-capacity",
+          "kind": "venue_capacity",
+          "text": "4,300 people for the published basketball layout",
+          "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+          "source_name": "MyState Bank Arena venue information",
+          "source_url": "https://www.mystatebankarena.com.au/about",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kb-x",
@@ -796,10 +998,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kbbZ",
@@ -820,10 +1023,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "jackjumpers:370d79db-58ad-11f1-8bd9-59a0fb078f66",
@@ -843,9 +1047,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "mystate-basketball-capacity",
+          "kind": "venue_capacity",
+          "text": "4,300 people for the published basketball layout",
+          "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+          "source_name": "MyState Bank Arena venue information",
+          "source_url": "https://www.mystatebankarena.com.au/about",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k9FE",
@@ -866,10 +1084,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k9qN",
@@ -890,10 +1109,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "north-melbourne-aflw-2026:round-11",
@@ -913,9 +1146,10 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:177Yv0G6C56yPlr",
@@ -936,10 +1170,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ancold-2026:conference",
@@ -963,9 +1198,23 @@
         "basis": "organiser_expectation"
       },
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "published:ancold-2026:conference",
+          "kind": "organiser_estimate",
+          "text": "More than 500 delegates expected",
+          "note": "Organiser forecast for the whole event, not a daily count.",
+          "source_name": "ANCOLD conference announcement",
+          "source_url": "https://ancold.org.au/ancold-2026-conference-hobart-tasmania/",
+          "checked_at": "2026-09-24T00:06:28+00:00",
+          "review_after": "2026-09-24T12:06:28+00:00",
+          "verification": "checked",
+          "update_method": "event_source_parser"
+        }
+      ]
     },
     {
       "id": "ticketmaster:177Yv0G6CEKeUPc",
@@ -986,10 +1235,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:177Yv0G6urlZ6nM",
@@ -1010,10 +1260,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kpoN",
@@ -1034,10 +1285,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:177Yv0G65Mhf1vN",
@@ -1058,10 +1323,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:1AKZk38GkdZggwE",
@@ -1082,10 +1361,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k_ak",
@@ -1106,10 +1386,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k9rb",
@@ -1130,10 +1411,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kbQa",
@@ -1154,10 +1449,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k40e",
@@ -1178,10 +1487,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kpvP",
@@ -1202,10 +1512,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kb4s",
@@ -1226,10 +1537,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kpO_",
@@ -1250,10 +1562,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kauU",
@@ -1274,10 +1587,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kbGZ",
@@ -1298,10 +1612,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "hith-2026:conference",
@@ -1320,10 +1635,24 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "hith-2026-history",
+          "kind": "historical_attendance",
+          "text": "Nearly 400 attendees in each of 2024 and 2025",
+          "note": "Previous annual meetings. A 2026 attendance forecast was not published on the checked page.",
+          "source_name": "HITH Society 2026 sponsorship page",
+          "source_url": "https://hithsocietyconference.com.au/sponsorship-exhibition2/",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k_07",
@@ -1344,10 +1673,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kfj-",
@@ -1368,10 +1711,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k4ZM",
@@ -1392,10 +1749,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkfkGkdGikCp",
@@ -1416,10 +1774,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17FZ38",
@@ -1440,10 +1799,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kbqJ",
@@ -1464,10 +1824,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "jackjumpers:37726ee0-58ad-11f1-8d86-85bf0639ac6b",
@@ -1487,9 +1861,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "mystate-basketball-capacity",
+          "kind": "venue_capacity",
+          "text": "4,300 people for the published basketball layout",
+          "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+          "source_name": "MyState Bank Arena venue information",
+          "source_url": "https://www.mystatebankarena.com.au/about",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kb8K",
@@ -1510,10 +1898,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:1AvGZbzGknfLk2c",
@@ -1534,10 +1936,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17koaK",
@@ -1558,10 +1974,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k4GJ",
@@ -1582,10 +2012,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kfPY",
@@ -1606,10 +2037,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17FZ37",
@@ -1630,10 +2075,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkuyGkdqgnfx",
@@ -1654,10 +2100,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kbeF",
@@ -1678,10 +2125,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kpbf",
@@ -1702,10 +2163,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:177Yv0G6CLA9KHl",
@@ -1726,10 +2188,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kbo9",
@@ -1750,10 +2213,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k_-S",
@@ -1774,10 +2238,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k_jz",
@@ -1798,10 +2276,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k_7y",
@@ -1822,10 +2314,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k_Ap",
@@ -1846,10 +2339,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "jackjumpers:37596f75-58ad-11f1-af00-fdfc50d4d18e",
@@ -1869,9 +2363,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "mystate-basketball-capacity",
+          "kind": "venue_capacity",
+          "text": "4,300 people for the published basketball layout",
+          "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+          "source_name": "MyState Bank Arena venue information",
+          "source_url": "https://www.mystatebankarena.com.au/about",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "jackjumpers:3763a871-58ad-11f1-bb01-15ea51636534",
@@ -1891,9 +2399,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "mystate-basketball-capacity",
+          "kind": "venue_capacity",
+          "text": "4,300 people for the published basketball layout",
+          "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+          "source_name": "MyState Bank Arena venue information",
+          "source_url": "https://www.mystatebankarena.com.au/about",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "jackjumpers:378eac70-58ad-11f1-89d4-c958368c756f",
@@ -1913,9 +2435,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "mystate-basketball-capacity",
+          "kind": "venue_capacity",
+          "text": "4,300 people for the published basketball layout",
+          "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+          "source_name": "MyState Bank Arena venue information",
+          "source_url": "https://www.mystatebankarena.com.au/about",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k_fV",
@@ -1936,10 +2472,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkf7GkeYs0x8",
@@ -1960,10 +2497,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkfAGkdOnPVQ",
@@ -1984,10 +2522,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkfAGkdOngVr",
@@ -2008,10 +2547,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k_AN",
@@ -2032,10 +2572,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkfAGkd-2ggt",
@@ -2056,10 +2597,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkfoGkd96Pp4",
@@ -2080,10 +2622,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:1AKZkfAGkd-94Ud",
@@ -2104,10 +2660,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "jackjumpers:378ad286-58ad-11f1-b7d9-03625b994063",
@@ -2127,9 +2684,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "mystate-basketball-capacity",
+          "kind": "venue_capacity",
+          "text": "4,300 people for the published basketball layout",
+          "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+          "source_name": "MyState Bank Arena venue information",
+          "source_url": "https://www.mystatebankarena.com.au/about",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:1AKZkfAGkd-LPUG",
@@ -2150,10 +2721,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkfAGkd-lPUJ",
@@ -2174,10 +2746,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkfAGkd-lgUI",
@@ -2198,10 +2771,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkfAGkd-VgUU",
@@ -2222,10 +2796,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "jackjumpers:37882039-58ad-11f1-b46f-4bbabfa2dd4f",
@@ -2245,9 +2820,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "mystate-basketball-capacity",
+          "kind": "venue_capacity",
+          "text": "4,300 people for the published basketball layout",
+          "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+          "source_name": "MyState Bank Arena venue information",
+          "source_url": "https://www.mystatebankarena.com.au/about",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:1AKZkfAGkd-HPM_",
@@ -2268,10 +2857,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkfAGkdxF4zr",
@@ -2292,10 +2882,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkfAGkdxK4zt",
@@ -2316,10 +2907,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1AKZkfAGkdxK4zm",
@@ -2340,10 +2932,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "jackjumpers:37931e61-58ad-11f1-982d-a93048d70593",
@@ -2363,9 +2956,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "mystate-basketball-capacity",
+          "kind": "venue_capacity",
+          "text": "4,300 people for the published basketball layout",
+          "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+          "source_name": "MyState Bank Arena venue information",
+          "source_url": "https://www.mystatebankarena.com.au/about",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "jackjumpers:3796b045-58ad-11f1-ad75-2572c13c410b",
@@ -2385,9 +2992,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "mystate-basketball-capacity",
+          "kind": "venue_capacity",
+          "text": "4,300 people for the published basketball layout",
+          "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+          "source_name": "MyState Bank Arena venue information",
+          "source_url": "https://www.mystatebankarena.com.au/about",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:16vGZ_31ZG7D-iE",
@@ -2408,10 +3029,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:177Yv0G6Gmbtxsd",
@@ -2432,10 +3054,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "jackjumpers:3797a4ad-58ad-11f1-bd80-679c79eacdbc",
@@ -2455,9 +3078,23 @@
       "status_evidence": null,
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T21:41:25+00:00"
+      "last_seen_at": "2026-09-24T00:06:28+00:00",
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "attendance_details": [
+        {
+          "id": "mystate-basketball-capacity",
+          "kind": "venue_capacity",
+          "text": "4,300 people for the published basketball layout",
+          "note": "Venue capacity only. It does not show tickets sold or expected attendance at this game.",
+          "source_name": "MyState Bank Arena venue information",
+          "source_url": "https://www.mystatebankarena.com.au/about",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:1AvGZ_oGkmXv0Uk",
@@ -2478,10 +3115,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:1AvGZ_oGkR6VP2K",
@@ -2502,10 +3153,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:1k7YvPabGAuePiO",
@@ -2526,10 +3191,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:177Yv0G61L5RbM2",
@@ -2550,10 +3229,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:177Yv0G6uBPyKpm",
@@ -2574,10 +3254,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17FZud",
@@ -2598,10 +3292,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:177Yv0G6CBEgSKX",
@@ -2622,10 +3330,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:177Yv0G613bkwQK",
@@ -2646,10 +3368,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:177Yv0G62xxI4-4",
@@ -2670,10 +3393,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:177Yv0G6GpCq3Wa",
@@ -2694,10 +3431,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17k_fv",
@@ -2718,10 +3456,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:15vGZ_3J_8K0d",
@@ -2742,10 +3481,24 @@
       "status_evidence": "Ticketmaster dates.status.code=offsale",
       "ticketmaster_status": "offsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:1AvGZ_oGkTISPRV",
@@ -2766,10 +3519,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     },
     {
       "id": "ticketmaster:1k7YvP7_GACtwpW",
@@ -2790,10 +3544,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:1AKZkf3GkemvKiP",
@@ -2814,10 +3582,24 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": [
+        {
+          "id": "odeon-capacity",
+          "kind": "venue_capacity",
+          "text": "841 fully seated, or 1,350 standing and seated",
+          "note": "Venue layouts. This event's layout and attendance have not been confirmed.",
+          "source_name": "Odeon official venue page",
+          "source_url": "https://odeontheatre.com.au/venue",
+          "checked_at": "2026-09-23T23:16:21+00:00",
+          "review_after": "2026-12-22T23:16:21+00:00",
+          "verification": "checked",
+          "update_method": "reviewed_reference"
+        }
+      ]
     },
     {
       "id": "ticketmaster:177Yv0G62w4WwD-",
@@ -2838,10 +3620,11 @@
       "status_evidence": "Ticketmaster dates.status.code=onsale",
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
-      "verification": "checked",
+      "verification": "source_unavailable",
       "last_seen_at": "2026-09-23T22:59:59+00:00",
-      "last_checked_at": "2026-09-23T22:59:59+00:00",
-      "first_seen_at": "2026-09-23T22:59:59+00:00"
+      "last_checked_at": "2026-09-24T00:06:28+00:00",
+      "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "attendance_details": []
     }
   ],
   "changes": [
@@ -3445,5 +4228,6 @@
       "kind": "added",
       "fields": {}
     }
-  ]
+  ],
+  "attendance_note": "Organiser forecasts, previous attendance and venue capacities are separate. Reviewed references retain their research check date; feed refreshes do not recheck them. These figures do not estimate mainland visitors, airport passengers or Uber bookings."
 }
