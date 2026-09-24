@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T00:32:22+00:00",
+  "generated_at": "2026-09-24T01:10:07+00:00",
   "timezone": "Australia/Hobart",
   "recommended_refresh_seconds": 21600,
   "stale_after_seconds": 43200,
-  "coverage": "Connected sources only: named conferences, the current JackJumpers schedule, Hobart entries in a 2026 AFLW article, and Ticketmaster listings within 30 km of Hobart when the API key is configured. Ticketmaster search extends 365 days ahead. Not all Hobart events or all AFL fixtures.",
+  "coverage": "New Hobart conferences from Conference Design and Leishman Associates public calendars; official AFL, AFLW, VFL and VFLW fixtures; JackJumpers schedule; named conference sources; and Ticketmaster within 30 km for 365 days ahead. Public calendar and football discovery extends 730 days ahead. Coverage depends on published listings.",
   "status_note": "Listed means present in the source, not a guarantee the event will proceed. Missing events are not treated as cancelled. Status detection is limited to explicit text recognised by the adapters and Ticketmaster status codes; review official announcements for urgent changes. Ticket sales status does not measure attendance.",
   "sources": [
     {
@@ -12,8 +12,8 @@
       "name": "Tasmania JackJumpers official schedule",
       "url": "https://www.jackjumpers.com.au/schedule",
       "coverage": "Games at recognised Hobart venues on the current club schedule. Away games and Launceston games excluded.",
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00",
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00",
       "status": "ok",
       "event_count": 15,
       "issues": []
@@ -23,8 +23,8 @@
       "name": "North Melbourne 2026 AFLW fixture announcement",
       "url": "https://www.nmfc.com.au/news/2027559/aflw-fixture-roos-to-launch-flag-defence-with-marvel-stadium-double-header",
       "coverage": "Hobart games in this 2026 club article only. This is not a live AFL match status feed or coverage of all AFL clubs.",
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00",
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -34,8 +34,8 @@
       "name": "ANCOLD conference announcement",
       "url": "https://ancold.org.au/ancold-2026-conference-hobart-tasmania/",
       "coverage": "This conference's published announcement. No claim that every programme change appears here.",
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00",
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -45,8 +45,8 @@
       "name": "National Economic Development Conference organiser",
       "url": "https://www.edaconference.com.au/",
       "coverage": "Main conference dates and venue. Optional tours and gala dinner times are not separately imported.",
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00",
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -56,8 +56,8 @@
       "name": "Oral Health Association of Australia registration listing",
       "url": "https://oralhealthcongress.com.au/OralHealthCongress2025/iCore/Events/Event_display.aspx?EventKey=CON261015",
       "coverage": "This congress's published dates and venue.",
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00",
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -67,8 +67,8 @@
       "name": "Hospital in the Home meeting organiser",
       "url": "https://hithsocietyconference.com.au/",
       "coverage": "Main meeting dates and venue. Session and dinner times are not imported.",
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00",
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -78,8 +78,8 @@
       "name": "Hospitality in Healthcare conference preview",
       "url": "https://www.hospitalityinhealthcaremag.org.au/49-conference-preview-2026",
       "coverage": "Dates and venue from the organiser's magazine preview. No claim that every programme change appears here.",
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00",
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -89,14 +89,118 @@
       "name": "Ticketmaster Discovery",
       "url": "https://www.ticketmaster.com.au/",
       "coverage": "Ticketmaster Discovery listings within 30 km of Hobart for the next 365 days, subject to API coverage. Venue locations are checked. Requires the TICKETMASTER_API_KEY repository secret. No attendance or pickup-demand estimate.",
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00",
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00",
       "status": "ok",
       "event_count": 95,
+      "issues": []
+    },
+    {
+      "id": "conference-design",
+      "name": "Conference Design public calendars",
+      "url": "https://conferencedesign.com.au/",
+      "coverage": "Dated Hobart conferences from public year calendars linked by the organiser. New years are discovered automatically.",
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00",
+      "status": "ok",
+      "event_count": 2,
+      "issues": []
+    },
+    {
+      "id": "leishman-conferences",
+      "name": "Leishman Associates conference calendar",
+      "url": "https://leishman-associates.com.au/future/",
+      "coverage": "Dated Hobart entries in the organiser current and future conference calendar. New annual sections are discovered automatically.",
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00",
+      "status": "ok",
+      "event_count": 4,
+      "issues": []
+    },
+    {
+      "id": "afl-official",
+      "name": "AFL official fixtures",
+      "url": "https://www.afl.com.au/fixture",
+      "coverage": "Published AFL, AFLW, VFL and VFLW fixtures at Hobart venues. New seasons are discovered from the public AFL feed.",
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00",
+      "status": "ok",
+      "event_count": 2,
       "issues": []
     }
   ],
   "events": [
+    {
+      "id": "leishman-conferences:46e1e57ea731474c9c52",
+      "source_id": "leishman-conferences",
+      "source_name": "Leishman Associates conference calendar",
+      "source_url": "https://leishman-associates.com.au/future/",
+      "title": "Australian Antarctic Research Conference (AARC) 2026",
+      "venue": "University of Tasmania",
+      "city": "Hobart",
+      "timezone": "Australia/Hobart",
+      "category": "Conference",
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-28",
+      "start_at": null,
+      "end_at": null,
+      "status": "listed",
+      "status_evidence": null,
+      "expected_attendance": null,
+      "discovered": true,
+      "venue_is_unknown": false,
+      "organiser_url": "https://leishman-aarc-2026.eventsair.site/",
+      "discovery_url": "https://leishman-associates.com.au/future/",
+      "attendance_source": {
+        "id": "attendance-auto-leishman-conferences:46e1e57ea731474c9c52",
+        "name": "Australian Antarctic Research Conference (AARC) 2026 organiser",
+        "url": "https://leishman-aarc-2026.eventsair.site/",
+        "format": "html",
+        "identity": "Antarctic",
+        "year": 2026,
+        "priority": 100,
+        "match": {
+          "id": "leishman-conferences:46e1e57ea731474c9c52",
+          "start_date": "2026-08-24",
+          "end_date": "2026-08-28",
+          "venue": "University of Tasmania"
+        }
+      },
+      "verification": "checked",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
+      "first_seen_at": "2026-09-24T01:10:07+00:00",
+      "attendance_details": [],
+      "attendance_checked": true
+    },
+    {
+      "id": "afl-official:9052",
+      "source_id": "afl-official",
+      "source_name": "AFL official fixtures",
+      "source_url": "https://www.afl.com.au/vfl/matches/9052",
+      "title": "Tasmania v Essendon",
+      "venue": "North Hobart Oval",
+      "city": "Hobart",
+      "timezone": "Australia/Hobart",
+      "category": "VFL",
+      "start_date": "2026-09-05",
+      "end_date": "2026-09-05",
+      "start_at": "2026-09-05T11:05:00+10:00",
+      "end_at": null,
+      "status": "listed",
+      "status_evidence": "AFL fixture status=CONCLUDED",
+      "expected_attendance": null,
+      "afl_match_id": 9052,
+      "discovered": true,
+      "related_urls": [
+        "https://www.ticketmaster.com.au/event/1300650EB72470A8"
+      ],
+      "verification": "checked",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
+      "first_seen_at": "2026-09-24T01:10:07+00:00",
+      "attendance_details": []
+    },
     {
       "id": "jackjumpers:37c8878a-a503-11f1-949b-c5f9a40c90fb",
       "source_id": "jackjumpers",
@@ -114,9 +218,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": []
     },
@@ -137,9 +242,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -176,8 +282,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -201,8 +307,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -226,8 +332,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -261,9 +367,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -300,8 +407,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -325,8 +432,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -363,8 +470,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -388,8 +495,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -413,8 +520,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -438,8 +545,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -476,8 +583,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -501,8 +608,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -526,8 +633,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -551,8 +658,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -589,8 +696,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -627,8 +734,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -649,9 +756,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [],
       "attendance_checked": true
@@ -673,9 +781,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": "https://www.edaconference.com.au/",
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -713,8 +822,8 @@
       "ticketmaster_status": "rescheduled",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -751,8 +860,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -773,9 +882,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -790,8 +900,8 @@
           "note": "Published whole-event figure.",
           "source_name": "Oral Health Association of Australia Congress 2026 prospectus",
           "source_url": "https://oralhealthcongress.com.au/common/Uploaded%20files/_OHAA%20Files/Congress/260209%20OHAA2026_Prospectus.pdf#page=4",
-          "checked_at": "2026-09-24T00:32:22+00:00",
-          "review_after": "2026-09-24T12:32:22+00:00",
+          "checked_at": "2026-09-24T01:10:07+00:00",
+          "review_after": "2026-09-24T13:10:07+00:00",
           "verification": "checked",
           "update_method": "automatic_source_check"
         }
@@ -818,8 +928,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -840,9 +950,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -879,8 +990,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -904,8 +1015,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -942,8 +1053,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -964,9 +1075,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -1003,8 +1115,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -1028,8 +1140,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -1050,9 +1162,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -1089,8 +1202,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -1114,8 +1227,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -1131,6 +1244,34 @@
           "update_method": "reviewed_reference"
         }
       ]
+    },
+    {
+      "id": "afl-official:8979",
+      "source_id": "afl-official",
+      "source_name": "AFL official fixtures",
+      "source_url": "https://www.afl.com.au/aflw/matches/8979",
+      "title": "North Melbourne v Adelaide Crows",
+      "venue": "North Hobart Oval",
+      "city": "Hobart",
+      "timezone": "Australia/Hobart",
+      "category": "AFLW",
+      "start_date": "2026-10-25",
+      "end_date": "2026-10-25",
+      "start_at": "2026-10-25T13:05:00+11:00",
+      "end_at": null,
+      "status": "listed",
+      "status_evidence": "AFL fixture status=SCHEDULED",
+      "expected_attendance": null,
+      "afl_match_id": 8979,
+      "discovered": true,
+      "related_urls": [
+        "https://www.ticketmaster.com.au/event/130064E2C7E65ADE"
+      ],
+      "verification": "checked",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
+      "first_seen_at": "2026-09-24T01:10:07+00:00",
+      "attendance_details": []
     },
     {
       "id": "north-melbourne-aflw-2026:round-11",
@@ -1149,10 +1290,12 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
+      "duplicate_of": "afl-official:8979",
       "attendance_details": []
     },
     {
@@ -1175,9 +1318,10 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
+      "duplicate_of": "afl-official:8979",
       "attendance_details": []
     },
     {
@@ -1201,9 +1345,10 @@
         "qualifier": "more_than",
         "basis": "organiser_expectation"
       },
+      "organiser_url": "https://ancoldconference.com.au/",
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -1218,8 +1363,8 @@
           "note": "Published whole-event figure.",
           "source_name": "ANCOLD Conference 2026 announcement",
           "source_url": "https://ancold.org.au/ancold-2026-conference-hobart-tasmania/",
-          "checked_at": "2026-09-24T00:32:22+00:00",
-          "review_after": "2026-09-24T12:32:22+00:00",
+          "checked_at": "2026-09-24T01:10:07+00:00",
+          "review_after": "2026-09-24T13:10:07+00:00",
           "verification": "checked",
           "update_method": "automatic_source_check"
         },
@@ -1235,8 +1380,97 @@
           "note": "Published whole-event figure.",
           "source_name": "ANCOLD Conference 2026 organiser",
           "source_url": "https://ancoldconference.com.au/",
-          "checked_at": "2026-09-24T00:32:22+00:00",
-          "review_after": "2026-09-24T12:32:22+00:00",
+          "checked_at": "2026-09-24T01:10:07+00:00",
+          "review_after": "2026-09-24T13:10:07+00:00",
+          "verification": "checked",
+          "update_method": "automatic_source_check"
+        }
+      ],
+      "attendance_checked": true
+    },
+    {
+      "id": "conference-design:935eff7738067bb514cf",
+      "source_id": "conference-design",
+      "source_name": "Conference Design public calendars",
+      "source_url": "https://conferencedesign.com.au/2026-conferences/",
+      "title": "2026 IEEE 36th AUPEC",
+      "venue": "University of Tasmania",
+      "city": "Hobart",
+      "timezone": "Australia/Hobart",
+      "category": "Conference",
+      "start_date": "2026-10-26",
+      "end_date": "2026-10-29",
+      "start_at": null,
+      "end_at": null,
+      "status": "listed",
+      "status_evidence": null,
+      "expected_attendance": null,
+      "discovered": true,
+      "venue_is_unknown": false,
+      "organiser_url": "https://attend.ieee.org/aupec-2026/general-information-for-conference-attendees/",
+      "discovery_url": "https://conferencedesign.com.au/2026-conferences/",
+      "verification": "checked",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
+      "first_seen_at": "2026-09-24T01:10:07+00:00",
+      "attendance_details": []
+    },
+    {
+      "id": "leishman-conferences:811bde195d45e546fd10",
+      "source_id": "leishman-conferences",
+      "source_name": "Leishman Associates conference calendar",
+      "source_url": "https://leishman-associates.com.au/future/",
+      "title": "ANCOLD 2026",
+      "venue": "Venue not listed",
+      "city": "Hobart",
+      "timezone": "Australia/Hobart",
+      "category": "Conference",
+      "start_date": "2026-10-26",
+      "end_date": "2026-10-28",
+      "start_at": null,
+      "end_at": null,
+      "status": "listed",
+      "status_evidence": null,
+      "expected_attendance": null,
+      "discovered": true,
+      "venue_is_unknown": true,
+      "organiser_url": "https://ancoldconference.com.au/",
+      "discovery_url": "https://leishman-associates.com.au/future/",
+      "attendance_source": {
+        "id": "attendance-auto-leishman-conferences:811bde195d45e546fd10",
+        "name": "ANCOLD 2026 organiser",
+        "url": "https://ancoldconference.com.au/",
+        "format": "html",
+        "identity": "ANCOLD",
+        "year": 2026,
+        "priority": 100,
+        "match": {
+          "id": "leishman-conferences:811bde195d45e546fd10",
+          "start_date": "2026-10-26",
+          "end_date": "2026-10-28",
+          "venue": "Venue not listed"
+        }
+      },
+      "verification": "checked",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
+      "first_seen_at": "2026-09-24T01:10:07+00:00",
+      "duplicate_of": "ancold-2026:conference",
+      "attendance_details": [
+        {
+          "kind": "organiser_estimate",
+          "value": 500,
+          "upper_value": null,
+          "qualifier": "more than",
+          "text": "More than 500 attendees",
+          "id": "attendance-auto-leishman-conferences:811bde195d45e546fd10:organiser_estimate",
+          "attendance_source_id": "attendance-auto-leishman-conferences:811bde195d45e546fd10",
+          "priority": 100,
+          "note": "Published whole-event figure.",
+          "source_name": "ANCOLD 2026 organiser",
+          "source_url": "https://ancoldconference.com.au/",
+          "checked_at": "2026-09-24T01:10:07+00:00",
+          "review_after": "2026-09-24T13:10:07+00:00",
           "verification": "checked",
           "update_method": "automatic_source_check"
         }
@@ -1263,8 +1497,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -1288,8 +1522,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -1313,8 +1547,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -1351,8 +1585,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -1389,8 +1623,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -1414,8 +1648,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -1439,8 +1673,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -1477,8 +1711,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -1515,8 +1749,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -1540,10 +1774,96 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
+    },
+    {
+      "id": "conference-design:80791395f197d0fba898",
+      "source_id": "conference-design",
+      "source_name": "Conference Design public calendars",
+      "source_url": "https://conferencedesign.com.au/2026-conferences/",
+      "title": "2026 CPA Australia and Pacific Joint Regional Conference",
+      "venue": "RACV Hobart Hotel",
+      "city": "Hobart",
+      "timezone": "Australia/Hobart",
+      "category": "Conference",
+      "start_date": "2026-11-09",
+      "end_date": "2026-11-11",
+      "start_at": null,
+      "end_at": null,
+      "status": "listed",
+      "status_evidence": null,
+      "expected_attendance": null,
+      "discovered": true,
+      "venue_is_unknown": false,
+      "organiser_url": "https://conferences.com.au/2026-cpa/",
+      "discovery_url": "https://conferencedesign.com.au/2026-conferences/",
+      "attendance_source": {
+        "id": "attendance-auto-conference-design:80791395f197d0fba898",
+        "name": "2026 CPA Australia and Pacific Joint Regional Conference organiser",
+        "url": "https://conferences.com.au/2026-cpa/",
+        "format": "html",
+        "identity": "Regional",
+        "year": 2026,
+        "priority": 100,
+        "match": {
+          "id": "conference-design:80791395f197d0fba898",
+          "start_date": "2026-11-09",
+          "end_date": "2026-11-11",
+          "venue": "RACV Hobart Hotel"
+        }
+      },
+      "verification": "checked",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
+      "first_seen_at": "2026-09-24T01:10:07+00:00",
+      "attendance_details": [],
+      "attendance_checked": true
+    },
+    {
+      "id": "leishman-conferences:b4bc61b113efd6a030c8",
+      "source_id": "leishman-conferences",
+      "source_name": "Leishman Associates conference calendar",
+      "source_url": "https://leishman-associates.com.au/future/",
+      "title": "Australia & New Zealand Prevocational Medical Education Forum – ANZPMEF",
+      "venue": "Venue not listed",
+      "city": "Hobart",
+      "timezone": "Australia/Hobart",
+      "category": "Conference",
+      "start_date": "2026-11-09",
+      "end_date": "2026-11-11",
+      "start_at": null,
+      "end_at": null,
+      "status": "listed",
+      "status_evidence": null,
+      "expected_attendance": null,
+      "discovered": true,
+      "venue_is_unknown": true,
+      "organiser_url": "https://anzpmef2026.com.au/",
+      "discovery_url": "https://leishman-associates.com.au/future/",
+      "attendance_source": {
+        "id": "attendance-auto-leishman-conferences:b4bc61b113efd6a030c8",
+        "name": "Australia & New Zealand Prevocational Medical Education Forum – ANZPMEF organiser",
+        "url": "https://anzpmef2026.com.au/",
+        "format": "html",
+        "identity": "Education",
+        "year": 2026,
+        "priority": 100,
+        "match": {
+          "id": "leishman-conferences:b4bc61b113efd6a030c8",
+          "start_date": "2026-11-09",
+          "end_date": "2026-11-11",
+          "venue": "Venue not listed"
+        }
+      },
+      "verification": "checked",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
+      "first_seen_at": "2026-09-24T01:10:07+00:00",
+      "attendance_details": [],
+      "attendance_checked": true
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kb4s",
@@ -1565,10 +1885,53 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
+    },
+    {
+      "id": "leishman-conferences:724e9da503cea83872e4",
+      "source_id": "leishman-conferences",
+      "source_name": "Leishman Associates conference calendar",
+      "source_url": "https://leishman-associates.com.au/future/",
+      "title": "Lifestyle Medicine",
+      "venue": "Venue not listed",
+      "city": "Hobart",
+      "timezone": "Australia/Hobart",
+      "category": "Conference",
+      "start_date": "2026-11-13",
+      "end_date": "2026-11-15",
+      "start_at": null,
+      "end_at": null,
+      "status": "listed",
+      "status_evidence": null,
+      "expected_attendance": null,
+      "discovered": true,
+      "venue_is_unknown": true,
+      "organiser_url": "https://lifestylemedicine.org.au/lm26/lm26-home/",
+      "discovery_url": "https://leishman-associates.com.au/future/",
+      "attendance_source": {
+        "id": "attendance-auto-leishman-conferences:724e9da503cea83872e4",
+        "name": "Lifestyle Medicine organiser",
+        "url": "https://lifestylemedicine.org.au/lm26/lm26-home/",
+        "format": "html",
+        "identity": "Lifestyle",
+        "year": 2026,
+        "priority": 100,
+        "match": {
+          "id": "leishman-conferences:724e9da503cea83872e4",
+          "start_date": "2026-11-13",
+          "end_date": "2026-11-15",
+          "venue": "Venue not listed"
+        }
+      },
+      "verification": "checked",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
+      "first_seen_at": "2026-09-24T01:10:07+00:00",
+      "attendance_details": [],
+      "attendance_checked": true
     },
     {
       "id": "ticketmaster:ZFwVzcymWZ17kpO_",
@@ -1590,8 +1953,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -1615,8 +1978,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -1640,8 +2003,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -1662,9 +2025,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": "https://hithsocietyconference.com.au/",
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -1702,8 +2066,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -1740,8 +2104,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -1778,8 +2142,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -1803,8 +2167,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -1828,8 +2192,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -1853,8 +2217,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -1888,9 +2252,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -1927,8 +2292,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -1965,8 +2330,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -2003,8 +2368,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -2041,8 +2406,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2066,8 +2431,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -2104,8 +2469,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2129,8 +2494,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2154,8 +2519,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -2192,8 +2557,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2217,8 +2582,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2242,8 +2607,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2267,8 +2632,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -2305,8 +2670,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -2343,8 +2708,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2368,8 +2733,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2390,9 +2755,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -2426,9 +2792,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -2462,9 +2829,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -2501,8 +2869,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2526,8 +2894,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2551,8 +2919,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2576,8 +2944,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2601,8 +2969,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2626,8 +2994,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2651,8 +3019,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -2689,8 +3057,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2711,9 +3079,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -2750,8 +3119,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2775,8 +3144,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2800,8 +3169,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2825,8 +3194,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2847,9 +3216,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -2886,8 +3256,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2911,8 +3281,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2936,8 +3306,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2961,8 +3331,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -2983,9 +3353,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -3019,9 +3390,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -3058,8 +3430,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -3083,8 +3455,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -3105,9 +3477,10 @@
       "status": "listed",
       "status_evidence": null,
       "expected_attendance": null,
+      "organiser_url": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T21:41:25+00:00",
       "attendance_details": [
         {
@@ -3144,8 +3517,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -3182,8 +3555,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -3220,8 +3593,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -3258,8 +3631,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -3283,8 +3656,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -3321,8 +3694,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -3359,8 +3732,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -3397,8 +3770,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -3422,8 +3795,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -3460,8 +3833,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -3485,8 +3858,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -3506,12 +3879,12 @@
       "start_at": "2027-04-02T18:30:00+11:00",
       "end_at": null,
       "status": "listed",
-      "status_evidence": "Ticketmaster dates.status.code=offsale",
-      "ticketmaster_status": "offsale",
+      "status_evidence": "Ticketmaster dates.status.code=onsale",
+      "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -3548,8 +3921,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     },
@@ -3573,8 +3946,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -3611,8 +3984,8 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": [
         {
@@ -3649,61 +4022,13 @@
       "ticketmaster_status": "onsale",
       "expected_attendance": null,
       "verification": "checked",
-      "last_seen_at": "2026-09-24T00:32:22+00:00",
-      "last_checked_at": "2026-09-24T00:32:22+00:00",
+      "last_seen_at": "2026-09-24T01:10:07+00:00",
+      "last_checked_at": "2026-09-24T01:10:07+00:00",
       "first_seen_at": "2026-09-23T22:59:59+00:00",
       "attendance_details": []
     }
   ],
   "changes": [
-    {
-      "at": "2026-09-23T21:41:25+00:00",
-      "event_id": "ancold-2026:conference",
-      "kind": "added",
-      "fields": {}
-    },
-    {
-      "at": "2026-09-23T21:41:25+00:00",
-      "event_id": "nedc-2026:conference",
-      "kind": "added",
-      "fields": {}
-    },
-    {
-      "at": "2026-09-23T21:41:25+00:00",
-      "event_id": "ohaa-2026:conference",
-      "kind": "added",
-      "fields": {}
-    },
-    {
-      "at": "2026-09-23T21:41:25+00:00",
-      "event_id": "hith-2026:conference",
-      "kind": "added",
-      "fields": {}
-    },
-    {
-      "at": "2026-09-23T21:41:25+00:00",
-      "event_id": "ihhc-2026:conference",
-      "kind": "added",
-      "fields": {}
-    },
-    {
-      "at": "2026-09-23T22:59:59+00:00",
-      "event_id": "ticketmaster:ZFwVzcymWZ17kf4s",
-      "kind": "added",
-      "fields": {}
-    },
-    {
-      "at": "2026-09-23T22:59:59+00:00",
-      "event_id": "ticketmaster:ZFwVzcymWZ17kf--",
-      "kind": "added",
-      "fields": {}
-    },
-    {
-      "at": "2026-09-23T22:59:59+00:00",
-      "event_id": "ticketmaster:ZFwVzcymWZ17kbq7",
-      "kind": "added",
-      "fields": {}
-    },
     {
       "at": "2026-09-23T22:59:59+00:00",
       "event_id": "ticketmaster:ZFwVzcymWZ17k_Az",
@@ -4255,9 +4580,67 @@
       "event_id": "ticketmaster:177Yv0G62w4WwD-",
       "kind": "added",
       "fields": {}
+    },
+    {
+      "at": "2026-09-24T01:10:07+00:00",
+      "event_id": "conference-design:935eff7738067bb514cf",
+      "kind": "added",
+      "fields": {}
+    },
+    {
+      "at": "2026-09-24T01:10:07+00:00",
+      "event_id": "conference-design:80791395f197d0fba898",
+      "kind": "added",
+      "fields": {}
+    },
+    {
+      "at": "2026-09-24T01:10:07+00:00",
+      "event_id": "leishman-conferences:46e1e57ea731474c9c52",
+      "kind": "added",
+      "fields": {}
+    },
+    {
+      "at": "2026-09-24T01:10:07+00:00",
+      "event_id": "leishman-conferences:811bde195d45e546fd10",
+      "kind": "added",
+      "fields": {}
+    },
+    {
+      "at": "2026-09-24T01:10:07+00:00",
+      "event_id": "leishman-conferences:b4bc61b113efd6a030c8",
+      "kind": "added",
+      "fields": {}
+    },
+    {
+      "at": "2026-09-24T01:10:07+00:00",
+      "event_id": "leishman-conferences:724e9da503cea83872e4",
+      "kind": "added",
+      "fields": {}
+    },
+    {
+      "at": "2026-09-24T01:10:07+00:00",
+      "event_id": "afl-official:9052",
+      "kind": "added",
+      "fields": {}
+    },
+    {
+      "at": "2026-09-24T01:10:07+00:00",
+      "event_id": "afl-official:8979",
+      "kind": "added",
+      "fields": {}
     }
   ],
   "attendance_sources": [
+    {
+      "id": "attendance-auto-leishman-conferences:46e1e57ea731474c9c52",
+      "name": "Australian Antarctic Research Conference (AARC) 2026 organiser",
+      "url": "https://leishman-aarc-2026.eventsair.site/",
+      "status": "ok",
+      "issues": [],
+      "event_count": 0,
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
+    },
     {
       "id": "attendance-ihhc-2026-preview",
       "name": "Hospitality in Healthcare National Conference 2026 preview",
@@ -4265,8 +4648,8 @@
       "status": "ok",
       "issues": [],
       "event_count": 0,
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00"
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
     },
     {
       "id": "attendance-ihhc-2026-organiser",
@@ -4275,8 +4658,8 @@
       "status": "ok",
       "issues": [],
       "event_count": 0,
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00"
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
     },
     {
       "id": "attendance-nedc-2026-organiser",
@@ -4285,8 +4668,8 @@
       "status": "ok",
       "issues": [],
       "event_count": 0,
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00"
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
     },
     {
       "id": "attendance-nedc-2026-sponsorship",
@@ -4295,8 +4678,8 @@
       "status": "ok",
       "issues": [],
       "event_count": 0,
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00"
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
     },
     {
       "id": "attendance-ohaa-2026-registration",
@@ -4305,8 +4688,8 @@
       "status": "ok",
       "issues": [],
       "event_count": 0,
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00"
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
     },
     {
       "id": "attendance-ohaa-2026-prospectus",
@@ -4315,8 +4698,8 @@
       "status": "ok",
       "issues": [],
       "event_count": 1,
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00"
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
     },
     {
       "id": "attendance-ancold-2026-announcement",
@@ -4325,8 +4708,8 @@
       "status": "ok",
       "issues": [],
       "event_count": 1,
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00"
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
     },
     {
       "id": "attendance-ancold-2026-organiser",
@@ -4335,8 +4718,48 @@
       "status": "ok",
       "issues": [],
       "event_count": 1,
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00"
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
+    },
+    {
+      "id": "attendance-auto-leishman-conferences:811bde195d45e546fd10",
+      "name": "ANCOLD 2026 organiser",
+      "url": "https://ancoldconference.com.au/",
+      "status": "ok",
+      "issues": [],
+      "event_count": 1,
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
+    },
+    {
+      "id": "attendance-auto-conference-design:80791395f197d0fba898",
+      "name": "2026 CPA Australia and Pacific Joint Regional Conference organiser",
+      "url": "https://conferences.com.au/2026-cpa/",
+      "status": "ok",
+      "issues": [],
+      "event_count": 0,
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
+    },
+    {
+      "id": "attendance-auto-leishman-conferences:b4bc61b113efd6a030c8",
+      "name": "Australia & New Zealand Prevocational Medical Education Forum – ANZPMEF organiser",
+      "url": "https://anzpmef2026.com.au/",
+      "status": "ok",
+      "issues": [],
+      "event_count": 0,
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
+    },
+    {
+      "id": "attendance-auto-leishman-conferences:724e9da503cea83872e4",
+      "name": "Lifestyle Medicine organiser",
+      "url": "https://lifestylemedicine.org.au/lm26/lm26-home/",
+      "status": "ok",
+      "issues": [],
+      "event_count": 0,
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
     },
     {
       "id": "attendance-hith-2026-organiser",
@@ -4345,8 +4768,8 @@
       "status": "ok",
       "issues": [],
       "event_count": 0,
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00"
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
     },
     {
       "id": "attendance-hith-2026-sponsorship",
@@ -4355,8 +4778,8 @@
       "status": "ok",
       "issues": [],
       "event_count": 0,
-      "last_attempt_at": "2026-09-24T00:32:22+00:00",
-      "last_success_at": "2026-09-24T00:32:22+00:00"
+      "last_attempt_at": "2026-09-24T01:10:07+00:00",
+      "last_success_at": "2026-09-24T01:10:07+00:00"
     }
   ]
 }
