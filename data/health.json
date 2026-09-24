@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T00:06:28+00:00",
-  "status": "needs_review",
+  "generated_at": "2026-09-24T00:32:22+00:00",
+  "status": "ok",
   "event_count": 116,
   "sources": [
     {
@@ -8,8 +8,8 @@
       "name": "Tasmania JackJumpers official schedule",
       "url": "https://www.jackjumpers.com.au/schedule",
       "coverage": "Games at recognised Hobart venues on the current club schedule. Away games and Launceston games excluded.",
-      "last_attempt_at": "2026-09-24T00:06:28+00:00",
-      "last_success_at": "2026-09-24T00:06:28+00:00",
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00",
       "status": "ok",
       "event_count": 15,
       "issues": []
@@ -19,8 +19,8 @@
       "name": "North Melbourne 2026 AFLW fixture announcement",
       "url": "https://www.nmfc.com.au/news/2027559/aflw-fixture-roos-to-launch-flag-defence-with-marvel-stadium-double-header",
       "coverage": "Hobart games in this 2026 club article only. This is not a live AFL match status feed or coverage of all AFL clubs.",
-      "last_attempt_at": "2026-09-24T00:06:28+00:00",
-      "last_success_at": "2026-09-24T00:06:28+00:00",
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -30,8 +30,8 @@
       "name": "ANCOLD conference announcement",
       "url": "https://ancold.org.au/ancold-2026-conference-hobart-tasmania/",
       "coverage": "This conference's published announcement. No claim that every programme change appears here.",
-      "last_attempt_at": "2026-09-24T00:06:28+00:00",
-      "last_success_at": "2026-09-24T00:06:28+00:00",
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -41,8 +41,8 @@
       "name": "National Economic Development Conference organiser",
       "url": "https://www.edaconference.com.au/",
       "coverage": "Main conference dates and venue. Optional tours and gala dinner times are not separately imported.",
-      "last_attempt_at": "2026-09-24T00:06:28+00:00",
-      "last_success_at": "2026-09-24T00:06:28+00:00",
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -52,8 +52,8 @@
       "name": "Oral Health Association of Australia registration listing",
       "url": "https://oralhealthcongress.com.au/OralHealthCongress2025/iCore/Events/Event_display.aspx?EventKey=CON261015",
       "coverage": "This congress's published dates and venue.",
-      "last_attempt_at": "2026-09-24T00:06:28+00:00",
-      "last_success_at": "2026-09-24T00:06:28+00:00",
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -63,21 +63,19 @@
       "name": "Hospital in the Home meeting organiser",
       "url": "https://hithsocietyconference.com.au/",
       "coverage": "Main meeting dates and venue. Session and dinner times are not imported.",
-      "last_attempt_at": "2026-09-24T00:06:28+00:00",
-      "last_success_at": "2026-09-23T22:59:59+00:00",
-      "status": "error",
-      "event_count": 0,
-      "issues": [
-        "SourceFormatError: Expected one event field; found 0"
-      ]
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00",
+      "status": "ok",
+      "event_count": 1,
+      "issues": []
     },
     {
       "id": "ihhc-2026",
       "name": "Hospitality in Healthcare conference preview",
       "url": "https://www.hospitalityinhealthcaremag.org.au/49-conference-preview-2026",
       "coverage": "Dates and venue from the organiser's magazine preview. No claim that every programme change appears here.",
-      "last_attempt_at": "2026-09-24T00:06:28+00:00",
-      "last_success_at": "2026-09-24T00:06:28+00:00",
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00",
       "status": "ok",
       "event_count": 1,
       "issues": []
@@ -87,13 +85,111 @@
       "name": "Ticketmaster Discovery",
       "url": "https://www.ticketmaster.com.au/",
       "coverage": "Ticketmaster Discovery listings within 30 km of Hobart for the next 365 days, subject to API coverage. Venue locations are checked. Requires the TICKETMASTER_API_KEY repository secret. No attendance or pickup-demand estimate.",
-      "last_attempt_at": "2026-09-24T00:06:28+00:00",
-      "last_success_at": "2026-09-23T22:59:59+00:00",
-      "status": "error",
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00",
+      "status": "ok",
+      "event_count": 95,
+      "issues": []
+    },
+    {
+      "id": "attendance-ihhc-2026-preview",
+      "name": "Hospitality in Healthcare National Conference 2026 preview",
+      "url": "https://www.hospitalityinhealthcaremag.org.au/49-conference-preview-2026",
+      "status": "ok",
+      "issues": [],
       "event_count": 0,
-      "issues": [
-        "Ticketmaster request failed or returned invalid JSON"
-      ]
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00"
+    },
+    {
+      "id": "attendance-ihhc-2026-organiser",
+      "name": "Hospitality in Healthcare National Conference 2026 organiser",
+      "url": "https://www.ihhc.org.au/conference/2026-conference/supporters-exhibitors/",
+      "status": "ok",
+      "issues": [],
+      "event_count": 0,
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00"
+    },
+    {
+      "id": "attendance-nedc-2026-organiser",
+      "name": "National Economic Development Conference 2026 organiser",
+      "url": "https://www.edaconference.com.au/",
+      "status": "ok",
+      "issues": [],
+      "event_count": 0,
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00"
+    },
+    {
+      "id": "attendance-nedc-2026-sponsorship",
+      "name": "National Economic Development Conference 2026 sponsorship",
+      "url": "https://edaconference.com.au/sponsorship",
+      "status": "ok",
+      "issues": [],
+      "event_count": 0,
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00"
+    },
+    {
+      "id": "attendance-ohaa-2026-registration",
+      "name": "Oral Health Association of Australia Congress 2026 registration",
+      "url": "https://oralhealthcongress.com.au/OralHealthCongress2025/iCore/Events/Event_display.aspx?EventKey=CON261015",
+      "status": "ok",
+      "issues": [],
+      "event_count": 0,
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00"
+    },
+    {
+      "id": "attendance-ohaa-2026-prospectus",
+      "name": "Oral Health Association of Australia Congress 2026 prospectus",
+      "url": "https://oralhealthcongress.com.au/common/Uploaded%20files/_OHAA%20Files/Congress/260209%20OHAA2026_Prospectus.pdf#page=4",
+      "status": "ok",
+      "issues": [],
+      "event_count": 1,
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00"
+    },
+    {
+      "id": "attendance-ancold-2026-announcement",
+      "name": "ANCOLD Conference 2026 announcement",
+      "url": "https://ancold.org.au/ancold-2026-conference-hobart-tasmania/",
+      "status": "ok",
+      "issues": [],
+      "event_count": 1,
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00"
+    },
+    {
+      "id": "attendance-ancold-2026-organiser",
+      "name": "ANCOLD Conference 2026 organiser",
+      "url": "https://ancoldconference.com.au/",
+      "status": "ok",
+      "issues": [],
+      "event_count": 1,
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00"
+    },
+    {
+      "id": "attendance-hith-2026-organiser",
+      "name": "Hospital in the Home Annual Scientific Meeting 2026 organiser",
+      "url": "https://hithsocietyconference.com.au/",
+      "status": "ok",
+      "issues": [],
+      "event_count": 0,
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00"
+    },
+    {
+      "id": "attendance-hith-2026-sponsorship",
+      "name": "Hospital in the Home Annual Scientific Meeting 2026 sponsorship",
+      "url": "https://hithsocietyconference.com.au/sponsorship-exhibition2/",
+      "status": "ok",
+      "issues": [],
+      "event_count": 0,
+      "last_attempt_at": "2026-09-24T00:32:22+00:00",
+      "last_success_at": "2026-09-24T00:32:22+00:00"
     }
   ]
 }
